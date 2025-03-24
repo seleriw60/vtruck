@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validation réussie - VFoodTruck</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background: #ff6b00; /* Couleur food truck */
+            color: white;
+        }
+        .container {
+            background: white;
+            color: #333;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 500px;
+            margin: 50px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://vfoodtruck.com/logo.png" alt="VFoodTruck" class="logo" onerror="this.style.display='none'">
+        <h1>🍔 Merci !</h1>
+        <p>Votre commande est confirmée.</p>
+        <p>Redirection vers vfoodtruck.com...</p>
+        <p><small>Si la page ne se ferme pas automatiquement, <a href="https://vfoodtruck.com" style="color: #ff6b00">cliquez ici</a></small></p>
+    </div>
+
+    <script>
+        // Redirection après 3 secondes
+        setTimeout(function(){
+            window.location.href = "https://vfoodtruck.com";
+            window.close(); // Tentative de fermeture
+        }, 3000);
+    </script>
+</body>
+</html>
